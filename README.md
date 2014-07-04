@@ -16,10 +16,13 @@ Fortunately, a significant part of functionality (moving placeholder) was alread
 - text view auto expand height when required (only AutoLayout supported) 
 
 ## Limits
-- `MaterialTextView` has some scrolling issue.
+- `MaterialTextView` has some serious scrolling issue.
 
 ## Acknowledgments
 Material Framework is based on [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField). Auto expanding UITextView functionality is imported from [AUIAutoGrowingTextView](https://github.com/adam-siton/AUIAutoGrowingTextView).
+
+## See Also
+See [ZFRippleButton](https://github.com/zoonooz/ZFRippleButton) for an UIButton with ripple effect, inspired by Google Material Design. Also written in Swift.
 
 ## Contact
 
