@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504B3B7419657D0100498686 /* MaterialFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504B3B7319657D0100498686 /* MaterialFramework.framework */; };
 		506669A41962DFE00029885B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506669A31962DFE00029885B /* AppDelegate.swift */; };
 		506669A61962DFE00029885B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506669A51962DFE00029885B /* ViewController.swift */; };
 		506669A91962DFE00029885B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506669A71962DFE00029885B /* Main.storyboard */; };
 		506669AB1962DFE00029885B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506669AA1962DFE00029885B /* Images.xcassets */; };
 		506669B71962DFE00029885B /* MaterialDesignTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506669B61962DFE00029885B /* MaterialDesignTestTests.swift */; };
+		50D944FC196316F90078C00B /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D944FB196316F90078C00B /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		504B3B7319657D0100498686 /* MaterialFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialFramework.framework; path = "MaterialFramework/build/Debug-iphoneos/MaterialFramework.framework"; sourceTree = "<group>"; };
 		5066699E1962DFE00029885B /* MaterialDesignTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialDesignTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506669A21962DFE00029885B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506669A31962DFE00029885B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		506669B01962DFE00029885B /* MaterialDesignTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506669B51962DFE00029885B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506669B61962DFE00029885B /* MaterialDesignTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialDesignTestTests.swift; sourceTree = "<group>"; };
+		50D944FB196316F90078C00B /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504B3B7419657D0100498686 /* MaterialFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +62,7 @@
 		506669951962DFE00029885B = {
 			isa = PBXGroup;
 			children = (
+				504B3B7319657D0100498686 /* MaterialFramework.framework */,
 				506669A01962DFE00029885B /* MaterialDesignTest */,
 				506669B31962DFE00029885B /* MaterialDesignTestTests */,
 				5066699F1962DFE00029885B /* Products */,
@@ -75,6 +81,7 @@
 		506669A01962DFE00029885B /* MaterialDesignTest */ = {
 			isa = PBXGroup;
 			children = (
+				50D944FB196316F90078C00B /* Icons.xcassets */,
 				506669A31962DFE00029885B /* AppDelegate.swift */,
 				506669A51962DFE00029885B /* ViewController.swift */,
 				506669A71962DFE00029885B /* Main.storyboard */,
@@ -190,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506669A91962DFE00029885B /* Main.storyboard in Resources */,
+				50D944FC196316F90078C00B /* Icons.xcassets in Resources */,
 				506669AB1962DFE00029885B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +333,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MaterialTextField/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/MaterialFramework/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MaterialDesignTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +349,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MaterialTextField/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/MaterialFramework/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MaterialDesignTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +415,7 @@
 				506669BC1962DFE10029885B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		506669BD1962DFE10029885B /* Build configuration list for PBXNativeTarget "MaterialDesignTestTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +424,7 @@
 				506669BF1962DFE10029885B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

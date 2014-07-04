@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MaterialDesignTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project Title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gs7-1M-4NA" customClass="MaterialTextField" customModule="MaterialFramework">
+                                <rect key="frame" x="20" y="74" width="440" height="52"/>
+                                <color key="tintColor" red="0.23916119337081909" green="0.31162330508232117" blue="0.736625075340271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="VRj-FW-ekX"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineNormalColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineNormalHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHighlightedHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="vXZ-lx-hvc" eventType="editingChanged" id="pZ1-7h-h5V"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="CsR-CP-tvb"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmC-aM-6Lt" customClass="MaterialTextField" customModule="MaterialFramework">
+                                <rect key="frame" x="20" y="177" width="440" height="52"/>
+                                <color key="tintColor" red="0.23916119337081909" green="0.31162330508232117" blue="0.736625075340271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="6rt-wL-e4k"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineNormalColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineNormalHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHighlightedHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Disabled field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-IT-eEm" customClass="MaterialTextField" customModule="MaterialFramework">
+                                <rect key="frame" x="20" y="254" width="440" height="38"/>
+                                <color key="tintColor" red="0.23916119337081909" green="0.31162330508232117" blue="0.736625075340271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="m8n-wL-VxL"/>
+                                    <constraint firstAttribute="height" constant="38" id="vYX-Jt-p8I"/>
+                                </constraints>
+                                <color key="textColor" red="0.90872246026992798" green="0.45136213302612305" blue="0.33260658383369446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineNormalColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineNormalHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHighlightedHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-0F-eIE" customClass="MaterialTextView" customModule="MaterialFramework">
+                                <rect key="frame" x="20" y="316" width="440" height="42"/>
+                                <color key="tintColor" red="0.23916119337081909" green="0.31162330508232117" blue="0.736625075340271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="WqV-1x-1DA"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYSpacing">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineNormalColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                        <real key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineNormalHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHighlightedHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94110745191574097" green="0.94121688604354858" blue="0.94105708599090576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rrn-0F-eIE" secondAttribute="trailing" constant="20" id="1B2-0I-Oef"/>
+                            <constraint firstItem="rrn-0F-eIE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="296" id="1bs-JQ-dee"/>
+                            <constraint firstItem="hxg-IT-eEm" firstAttribute="width" secondItem="VmC-aM-6Lt" secondAttribute="width" id="3ik-Nf-PGm"/>
+                            <constraint firstAttribute="trailing" secondItem="Gs7-1M-4NA" secondAttribute="trailing" constant="20" id="PyK-Vk-OK3"/>
+                            <constraint firstItem="hxg-IT-eEm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="RzF-1R-7cW"/>
+                            <constraint firstItem="Gs7-1M-4NA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ac2-Ey-U6l"/>
+                            <constraint firstItem="rrn-0F-eIE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="bVe-RX-Ngd"/>
+                            <constraint firstItem="hxg-IT-eEm" firstAttribute="top" secondItem="VmC-aM-6Lt" secondAttribute="bottom" constant="25" id="h3i-X6-fIc"/>
+                            <constraint firstItem="VmC-aM-6Lt" firstAttribute="top" secondItem="Gs7-1M-4NA" secondAttribute="bottom" constant="51" id="iQJ-sp-twa"/>
+                            <constraint firstItem="VmC-aM-6Lt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="rGW-5J-5dH"/>
+                            <constraint firstItem="Gs7-1M-4NA" firstAttribute="width" secondItem="VmC-aM-6Lt" secondAttribute="width" id="xS3-Sp-5xr"/>
+                            <constraint firstItem="Gs7-1M-4NA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="54" id="yBo-8h-okG"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="rrn-0F-eIE" id="4kw-z6-IHa"/>
+                        <outlet property="projectTitleTextField" destination="Gs7-1M-4NA" id="Ibn-6N-Lw9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
